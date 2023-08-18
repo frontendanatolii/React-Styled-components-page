@@ -1,0 +1,27 @@
+.contact_button {
+  background: #FE5459;
+  color: #FFFFFF;
+  font-family: Neutrif Pro;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 6px 15px;
+  border-radius: 1%;
+  border: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.is-active {
+  color: #FD5359 !important;  
+  border-bottom: 2px solid #FD5359
+}
+
+body {
+  background-color: rgb(250, 250, 253);
+}

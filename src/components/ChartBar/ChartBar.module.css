@@ -1,0 +1,35 @@
+.chartbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+  
+.chartbar__inner {
+  height: 6px;
+  width: 100%;
+  border: 1px solid #F4F4F9;
+  border-radius: 12px;
+  background-color: #F4F4F9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+  
+.chartbar__fill {
+  background-color: #FD5359;
+  height: 6px;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+  
+.chartbar__label {
+  font-family: Neutrif Pro;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
