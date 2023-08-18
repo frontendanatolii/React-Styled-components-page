@@ -11,23 +11,25 @@ import companyIcon from './images/companyIcon.svg';
 
 import locationIcon from './images/location_searchIcon.svg'
 import { Summary } from './components/Summary/Summary';
+import { Portfolio } from './components/Portfolio/Portfolio';
+import { Reviews } from './components/Reviews/Reviews';
 
 const tabs = [
-  { id: 'summary', title: 'Summary', content: 'Some text 1' },
+  { id: 'summary', title: 'Summary', content: <Summary /> },
   { id: 'performance', title: 'Performance', content: 'Some text 2' },
-  { id: 'portfolio', title: 'Portfolio', content: 'Some text 3' },
-  { id: 'reviews', title: 'Reviews', content: 'Some text 4' },
+  { id: 'portfolio', title: 'Portfolio', content: <Portfolio /> },
+  { id: 'reviews', title: 'Reviews', content: <Reviews /> },
   { id: 'latest', title: 'Latest', content: 'Some text 5' }
 ];
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <HeaderNavigation />
       <Hero />
 
-      <div className="section">
-        <div className="container">
+      <div>
+        <div>
           <Routes>
             <Route path="/" element={<TabsPage tabs={tabs} />} />
             <Route path="/home" element={<Navigate to="/" replace />} />

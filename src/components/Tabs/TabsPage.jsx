@@ -12,7 +12,7 @@ export const TabsPage = ({ tabs }) => {
       <div className={classes.tabs_container}>
         <ul className={classes.tabs}>
           {tabs.map(tab => (
-            <li>
+            <li key={tab.id}>
               <Link
                 to={`/tabs/${tab.id}`}
                 className={classNames(classes.tabs_tab,
@@ -27,11 +27,10 @@ export const TabsPage = ({ tabs }) => {
           ))}
         </ul>
 
-        <div className="block" data-cy="TabContent">
-          {selectedTab &&
-            (tabId === 'summary'
-            ? <Summary />
-            : selectedTab.content)
+        <div className={classes.content}>
+          {selectedTab
+            ? selectedTab.content
+            : 'there is no content'
           }
         </div>
       </div>

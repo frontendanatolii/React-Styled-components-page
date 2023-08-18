@@ -1,0 +1,65 @@
+.preview {
+  width: 90%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px 0px #27283108;
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  padding: 50px 20px;
+  margin: 30px auto;
+}
+
+.preview_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 600px;
+}
+
+.preview_stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.preview_description {
+  color: #272831;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: center no-repeat url(../../images/Ellipse.svg);
+}
+
+.preview_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview_user_image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.preview_user_name {
+  color: #272831;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.preview_user_position {
+  color: #9193A9;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
