@@ -29,7 +29,7 @@ function App() {
       <div className="section">
         <div className="container">
           <Routes>
-            <Route path="/" element={<h1 className="title">Home page</h1>} />
+            <Route path="/" element={<TabsPage tabs={tabs} />} />
             <Route path="/home" element={<Navigate to="/" replace />} />
             <Route path="tabs">
               <Route index element={<TabsPage tabs={tabs} />} />
